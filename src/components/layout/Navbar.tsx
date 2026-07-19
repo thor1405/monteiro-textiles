@@ -82,7 +82,7 @@ export function Navbar() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-7 font-sans text-xs font-semibold tracking-[0.14em] uppercase">
+          <nav className="hidden lg:flex items-center gap-6 xl:gap-8 font-sans text-[11px] xl:text-xs font-semibold tracking-[0.14em] uppercase whitespace-nowrap">
             <Link
               href="/"
               className={`hover:text-gold transition-colors ${
@@ -170,15 +170,6 @@ export function Navbar() {
               }`}
             >
               Fabric Guide
-            </Link>
-
-            <Link
-              href="/concierge"
-              className={`flex items-center gap-1 hover:text-gold transition-colors text-gold ${
-                pathname === "/concierge" ? "font-bold underline underline-offset-4" : ""
-              }`}
-            >
-              <Sparkles className="w-3.5 h-3.5 animate-pulse" /> AI Concierge
             </Link>
 
             <Link
