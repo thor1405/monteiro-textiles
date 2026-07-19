@@ -70,9 +70,9 @@ export function Navbar() {
             : "bg-transparent text-black py-6"
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+        <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-6 xl:gap-10">
           {/* Logo */}
-          <Link href="/" className="flex flex-col group">
+          <Link href="/" className="flex flex-col group shrink-0">
             <span className="font-serif text-2xl md:text-3xl font-bold tracking-[0.18em] uppercase transition-colors group-hover:text-gold">
               Monteiro
             </span>
@@ -82,7 +82,7 @@ export function Navbar() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-6 xl:gap-8 font-sans text-[11px] xl:text-xs font-semibold tracking-[0.14em] uppercase whitespace-nowrap">
+          <nav className="hidden lg:flex items-center gap-5 xl:gap-7 font-sans text-[10px] xl:text-[11px] font-semibold tracking-[0.14em] uppercase whitespace-nowrap">
             <Link
               href="/"
               className={`hover:text-gold transition-colors ${
