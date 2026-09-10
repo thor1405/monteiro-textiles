@@ -1,0 +1,80 @@
+export const BRANDS_DATA = [
+  {
+    id: 'raymond-luxury',
+    name: 'Raymond Fine Fabrics',
+    heritage: 'Since 1925',
+    origin: 'Thane & Vapi, India',
+    tier: 'Supreme Heritage',
+    specialty: 'Super 120s – Super 250s Worsted Pure Wool, Fine Linen & Terrywool',
+    logoText: 'RAYMOND',
+    description: 'India’s most celebrated textile house and a globally revered pioneer in worsted wool suiting. Renowned for impeccable fall, high thread counts, and enduring elegance that has dressed world leaders for a century.',
+    keyProducts: ['Presidential Super 150s Suiting', 'Sapphire & Dynasty Blends', 'Gladiolus Fine Shirting'],
+    image: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=800&q=80',
+    tags: ['Master Mill Partner', 'Bespoke Suiting', 'Centenary Legacy']
+  },
+  {
+    id: 'linen-club',
+    name: 'Linen Club',
+    heritage: 'Since 1949',
+    origin: 'Kolkata (Rishra) & Flanders Sourcing',
+    tier: 'Artisanal Natural Bast',
+    specialty: '100% Certified European Flax Linen (30s to 120s Lea)',
+    logoText: 'LINEN CLUB',
+    description: 'Crafted with authentic raw flax imported from the historic coastal fields of France and Belgium. Certified by the European Confederation of Flax and Hemp (CELC) for pristine sustainability and natural cooling.',
+    keyProducts: ['Cavallo Royal Linen', 'Club Imperial 80s Lea', 'Yarn Dyed Slub Solids'],
+    image: 'https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=800&q=80',
+    tags: ['European Flax Certified', 'Natural Cooling', 'Resort Luxury']
+  },
+  {
+    id: 'siyarams',
+    name: 'Siyaram’s Atelier',
+    heritage: 'Since 1978',
+    origin: 'Mumbai, India',
+    tier: 'Executive Luxury',
+    specialty: 'Polyester-Wool Blends, Micro-Twill Suiting, Poly-Viscose & Premium Shirting',
+    logoText: 'SIYARAM’S',
+    description: 'Pioneers in structured suiting for the modern executive and wedding patron. Unsurpassed wrinkle recovery and rich color vibrancy engineered for tropical and demanding climates.',
+    keyProducts: ['Royale Suiting Line', 'Mistair Breathable Blends', 'Regal Bandhgala Coatings'],
+    image: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=80',
+    tags: ['Wrinkle Shield', 'Executive Sharp', 'Tropical Comfort']
+  },
+  {
+    id: 'tessitura-monti',
+    name: 'Tessitura Monti Italy',
+    heritage: 'Since 1911',
+    origin: 'Maserada sul Piave, Treviso, Italy',
+    tier: 'Italian Haute Couture Shirting',
+    specialty: '2-Ply Egyptian Giza & Sea Island Cotton Shirting (100/2 to 200/2)',
+    logoText: 'MONTI ITALY',
+    description: 'One of the world’s foremost names in luxury shirting fabrics. Monti represents Italian weaving mastery, spinning superfine long-staple cotton into silky poplins, royal oxfords, and jacquards.',
+    keyProducts: ['Egyptian Giza 88 Twills', 'Sea Island Luxury Shirting', 'Brioni & Sartorial Stripes'],
+    image: 'https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=800&q=80',
+    tags: ['Made in Italy', 'Double-Twisted 2-Ply', 'Silky Handfeel']
+  },
+  {
+    id: 'arvind-luxury',
+    name: 'Arvind Luxury Cottons & Khadi',
+    heritage: 'Since 1931',
+    origin: 'Ahmedabad, Gujarat',
+    tier: 'Sustainable Heritage',
+    specialty: 'Organic Supima Cotton, Handcrafted Indigo Denim & Fine Muslin',
+    logoText: 'ARVIND',
+    description: 'Renowned globally for sustainable innovation and artisanal cotton excellence. From farm-to-fabric traceable Supima cottons to natural indigo dyed weaves and feather-light muslins.',
+    keyProducts: ['Supima Luxury Cottons', 'Heritage Khadi Weaves', 'Zero-Water Dyes'],
+    image: 'https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?auto=format&fit=crop&w=800&q=80',
+    tags: ['Organic Certified', 'Supima Cotton', 'Sustainable Weave']
+  },
+  {
+    id: 'vimal-heritage',
+    name: 'Vimal Heritage Suiting',
+    heritage: 'Since 1966',
+    origin: 'Naroda, Gujarat',
+    tier: 'Classic Heritage',
+    specialty: 'Rich Worsted Blends, Structured Uniform & Ceremonial Fabrics',
+    logoText: 'ONLY VIMAL',
+    description: 'An iconic brand synonymous with Indian textile history. Offering robust structured fabrics engineered for ceremonial grandeur, safari suits, and long-lasting formal wardrobes.',
+    keyProducts: ['Celebration Velvet', 'Regal Ceremonial Suiting', 'Classic Poly-Wool Blends'],
+    image: 'https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?auto=format&fit=crop&w=800&q=80',
+    tags: ['Iconic Indian Brand', 'Ceremonial Fabric', 'Durable Weave']
+  }
+];

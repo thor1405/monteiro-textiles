@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { CATEGORIES, FABRIC_CATALOG, BRAND_PARTNERS, TESTIMONIALS, SHOWROOM_INFO } from "@/data/monteiroData";
+import { CATEGORIES, FABRIC_CATALOG, BRAND_PARTNERS, TESTIMONIALS, SHOWROOM_INFO, SERVICES_LIST } from "@/data/monteiroData";
 import { useShowroom } from "@/context/ShowroomContext";
 import { 
   Sparkles, 
@@ -362,6 +362,137 @@ export default function Home() {
         </div>
       </section>
 
+      {/* 4.5 MACRO CRAFTSMANSHIP & TEXTURE FOCUS */}
+      <section className="bg-obsidian text-white py-24 border-y border-gold/30 relative">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-white/10 pb-6">
+            <div>
+              <span className="text-xs font-sans font-bold tracking-widest text-gold uppercase">
+                Sensory & Tactile Mastery
+              </span>
+              <h2 className="font-serif text-3xl sm:text-5xl font-bold uppercase tracking-tight text-white mt-1">
+                Every Thread Tells a Story
+              </h2>
+            </div>
+            <p className="text-xs sm:text-sm text-gray-300 font-sans max-w-md leading-relaxed">
+              Touch, weight, breathability, and natural luster. We inspect every bolt under microscopic standards to guarantee pure, unadulterated fiber.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white/5 border border-white/10 rounded-2xl overflow-hidden p-6 space-y-4 hover:border-gold/60 transition-all">
+              <div className="h-48 rounded-xl overflow-hidden relative">
+                <img
+                  src="https://images.unsplash.com/photo-1579783902614-a3fb3927b675?q=80&w=800&auto=format&fit=crop"
+                  alt="Pure Mulberry Silk"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                />
+                <span className="absolute top-3 left-3 px-3 py-1 bg-black/80 backdrop-blur-md text-gold text-[10px] font-mono uppercase tracking-widest rounded-full border border-gold/40">
+                  Pure Mulberry Silk
+                </span>
+              </div>
+              <h4 className="font-serif text-xl font-bold text-white uppercase">Katan Silk & Gold Brocade</h4>
+              <p className="text-xs text-gray-300 font-sans leading-relaxed">
+                Hand-twisted filaments woven on traditional pit looms in Varanasi. High-density Kadwa zari motifs that catch candlelight with subtle majesty.
+              </p>
+              <div className="pt-2 flex items-center justify-between text-[11px] font-mono text-gold-light border-t border-white/10">
+                <span>Density: 310 g/m²</span>
+                <span>Luster: High Evening</span>
+              </div>
+            </div>
+
+            <div className="bg-white/5 border border-white/10 rounded-2xl overflow-hidden p-6 space-y-4 hover:border-gold/60 transition-all">
+              <div className="h-48 rounded-xl overflow-hidden relative">
+                <img
+                  src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?q=80&w=800&auto=format&fit=crop"
+                  alt="Super 150s Worsted Wool"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                />
+                <span className="absolute top-3 left-3 px-3 py-1 bg-black/80 backdrop-blur-md text-gold text-[10px] font-mono uppercase tracking-widest rounded-full border border-gold/40">
+                  Super 150s Worsted
+                </span>
+              </div>
+              <h4 className="font-serif text-xl font-bold text-white uppercase">Biella Merino Twill</h4>
+              <p className="text-xs text-gray-300 font-sans leading-relaxed">
+                16.0 micron Australian merino spun in Piedmont, Italy. Exceptional natural springiness, memory recovery, and breathable 4-season comfort.
+              </p>
+              <div className="pt-2 flex items-center justify-between text-[11px] font-mono text-gold-light border-t border-white/10">
+                <span>Weight: 260 g/m²</span>
+                <span>Drape: Fluid Structured</span>
+              </div>
+            </div>
+
+            <div className="bg-white/5 border border-white/10 rounded-2xl overflow-hidden p-6 space-y-4 hover:border-gold/60 transition-all">
+              <div className="h-48 rounded-xl overflow-hidden relative">
+                <img
+                  src="https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?q=80&w=800&auto=format&fit=crop"
+                  alt="Belgian Linen Flax"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                />
+                <span className="absolute top-3 left-3 px-3 py-1 bg-black/80 backdrop-blur-md text-gold text-[10px] font-mono uppercase tracking-widest rounded-full border border-gold/40">
+                  Belgian Flax
+                </span>
+              </div>
+              <h4 className="font-serif text-xl font-bold text-white uppercase">Normandy Master Flax</h4>
+              <p className="text-xs text-gray-300 font-sans leading-relaxed">
+                Long-staple organic dew-retted flax from Flanders. Natural thermal cooling for coastal humidity, gaining lived-in softness with every wear.
+              </p>
+              <div className="pt-2 flex items-center justify-between text-[11px] font-mono text-gold-light border-t border-white/10">
+                <span>Yarn: 60s Lea Pure</span>
+                <span>Breathability: Ultra-Cool</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 4.6 AUTHORIZED BRANDS / MILL PARTNERS SHOWCASE */}
+      <section className="bg-white py-20 border-b border-obsidian/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+          <div className="text-center max-w-3xl mx-auto space-y-3">
+            <span className="text-xs font-sans font-bold tracking-widest text-gold-dark uppercase">
+              Provenance & Traceability
+            </span>
+            <h2 className="font-serif text-3xl sm:text-5xl font-bold uppercase tracking-tight text-obsidian">
+              Authorized Mill Partners
+            </h2>
+            <p className="text-sm text-gray-600 font-sans leading-relaxed">
+              We partner directly with the world’s most celebrated weaving dynasties — from Raymond and Linen Club to European houses like Zegna, Scabal, and Loro Piana.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+            {BRAND_PARTNERS.map((brand) => (
+              <Link
+                key={brand.id}
+                href="/brands"
+                className="p-6 rounded-2xl bg-cashmere border border-obsidian/10 hover:border-gold hover:shadow-lg transition-all flex flex-col items-center justify-center text-center group"
+              >
+                <span className="font-serif font-bold text-base tracking-wider text-obsidian group-hover:text-gold-dark transition-colors uppercase">
+                  {brand.name}
+                </span>
+                <span className="text-[10px] font-sans font-medium text-gray-500 uppercase tracking-widest mt-1">
+                  {brand.origin}
+                </span>
+                <span className="text-[9px] text-gold-dark font-mono uppercase mt-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                  View Mill →
+                </span>
+              </Link>
+            ))}
+          </div>
+
+          <div className="text-center pt-2">
+            <Link
+              href="/brands"
+              className="inline-flex items-center gap-2 px-8 py-3.5 bg-obsidian hover:bg-gold hover:text-obsidian text-white rounded-xl font-sans text-xs font-bold uppercase tracking-widest transition-all shadow"
+            >
+              <span>Explore All Mill Partners & Selvedge Specs</span>
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* 5. WHY MONTEIRO & HERITAGE */}
       <section className="bg-obsidian text-white py-24 border-y border-gold/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -416,6 +547,57 @@ export default function Home() {
         </div>
       </section>
 
+      {/* 5.5 ATELIER SERVICES PREVIEW */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 pb-6 border-b border-obsidian/10">
+          <div>
+            <span className="text-xs font-sans font-bold tracking-widest text-gold-dark uppercase">
+              Bespoke Textile Advisory
+            </span>
+            <h2 className="font-serif text-3xl sm:text-5xl font-bold uppercase tracking-wide text-obsidian mt-1">
+              Atelier Services
+            </h2>
+            <p className="text-xs sm:text-sm text-gray-600 font-sans max-w-xl mt-2 leading-relaxed">
+              From one-on-one fabric matching to royal wedding trousseaus and master tailor blueprints, experience dedicated white-glove craftsmanship.
+            </p>
+          </div>
+          <Link
+            href="/services"
+            className="text-xs font-sans font-bold uppercase tracking-widest text-obsidian hover:text-gold-dark flex items-center gap-1 group"
+          >
+            <span>Explore All 5 Services</span>
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          </Link>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {SERVICES_LIST.slice(0, 4).map((service, sIdx) => (
+            <div
+              key={service.id}
+              className="bg-white border border-obsidian/10 hover:border-gold rounded-2xl p-6 shadow-md hover:shadow-xl transition-all flex flex-col justify-between space-y-4 group"
+            >
+              <div className="space-y-3">
+                <div className="w-10 h-10 rounded-xl bg-gold/15 text-gold-dark font-serif font-bold flex items-center justify-center text-sm border border-gold/30">
+                  0{sIdx + 1}
+                </div>
+                <h4 className="font-serif text-lg font-bold uppercase text-obsidian group-hover:text-gold-dark transition-colors">
+                  {service.title}
+                </h4>
+                <p className="text-xs text-gray-600 font-sans line-clamp-3 leading-relaxed">
+                  {service.shortDescription}
+                </p>
+              </div>
+
+              <div className="pt-3 border-t border-obsidian/10 flex items-center justify-between text-[11px] font-sans font-bold text-gold-dark uppercase">
+                <Link href="/services" className="hover:underline flex items-center gap-1">
+                  Learn More <ChevronRight className="w-3.5 h-3.5" />
+                </Link>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* 6. TESTIMONIALS & GOOGLE REVIEWS PREVIEW */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto space-y-3 mb-16">
@@ -463,7 +645,7 @@ export default function Home() {
 
         <div className="mt-12 text-center">
           <Link
-            href="/testimonials"
+            href="/reviews"
             className="inline-flex items-center gap-2 text-xs font-sans font-bold uppercase tracking-widest text-obsidian hover:text-gold-dark border-b-2 border-obsidian pb-1"
           >
             Read All 1,240+ Verified Hampankatta Stories <ChevronRight className="w-4 h-4" />

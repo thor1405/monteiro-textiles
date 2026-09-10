@@ -82,14 +82,14 @@ export function Navbar() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-5 xl:gap-7 font-sans text-[10px] xl:text-[11px] font-semibold tracking-[0.14em] uppercase whitespace-nowrap">
+          <nav className="hidden lg:flex items-center gap-5 xl:gap-8 font-sans text-[11px] xl:text-[12px] font-semibold tracking-[0.14em] uppercase whitespace-nowrap">
             <Link
               href="/"
               className={`hover:text-gold transition-colors ${
                 pathname === "/" ? "text-gold font-bold" : ""
               }`}
             >
-              Showroom
+              Home
             </Link>
 
             {/* Collections Dropdown Trigger */}
@@ -155,48 +155,48 @@ export function Navbar() {
             </div>
 
             <Link
-              href="/occasions"
+              href="/about"
               className={`hover:text-gold transition-colors ${
-                pathname === "/occasions" ? "text-gold font-bold" : ""
+                pathname === "/about" ? "text-gold font-bold" : ""
               }`}
             >
-              Occasions
+              About
             </Link>
 
             <Link
-              href="/fabric-guide"
+              href="/services"
               className={`hover:text-gold transition-colors ${
-                pathname === "/fabric-guide" ? "text-gold font-bold" : ""
+                pathname === "/services" ? "text-gold font-bold" : ""
               }`}
             >
-              Fabric Guide
+              Services
             </Link>
 
             <Link
-              href="/swatches"
+              href="/brands"
               className={`hover:text-gold transition-colors ${
-                pathname === "/swatches" ? "text-gold font-bold" : ""
+                pathname === "/brands" ? "text-gold font-bold" : ""
               }`}
             >
-              Swatches
+              Brands
             </Link>
 
             <Link
-              href="/lookbook"
+              href="/visit"
               className={`hover:text-gold transition-colors ${
-                pathname === "/lookbook" ? "text-gold font-bold" : ""
+                pathname === "/visit" || pathname === "/contact" ? "text-gold font-bold" : ""
               }`}
             >
-              Lookbook
+              Visit Us
             </Link>
 
             <Link
-              href="/showroom"
+              href="/reviews"
               className={`hover:text-gold transition-colors ${
-                pathname === "/showroom" ? "text-gold font-bold" : ""
+                pathname === "/reviews" || pathname === "/testimonials" ? "text-gold font-bold" : ""
               }`}
             >
-              Experience
+              Stories & Reviews
             </Link>
           </nav>
 
@@ -344,98 +344,94 @@ export function Navbar() {
               </button>
             </div>
 
-            <div className="flex-1 overflow-y-auto py-6 space-y-5 font-serif text-2xl tracking-wider">
+            <div className="flex-1 overflow-y-auto py-6 space-y-4 font-serif text-2xl tracking-wider">
               <Link
                 href="/"
                 onClick={() => setMobileMenuOpen(false)}
                 className="block hover:text-gold"
               >
-                Home Showroom
+                1. Home page
               </Link>
               <Link
                 href="/collections"
                 onClick={() => setMobileMenuOpen(false)}
                 className="block hover:text-gold"
               >
-                Collections (All 8 Vaults)
+                2. Collections
               </Link>
               <Link
-                href="/occasions"
+                href="/about"
                 onClick={() => setMobileMenuOpen(false)}
                 className="block hover:text-gold"
               >
-                Occasion Finder
+                3. About Monteiro Textiles
               </Link>
               <Link
-                href="/fabric-guide"
+                href="/services"
                 onClick={() => setMobileMenuOpen(false)}
                 className="block hover:text-gold"
               >
-                Luxury Fabric Guide
-              </Link>
-              <Link
-                href="/concierge"
-                onClick={() => setMobileMenuOpen(false)}
-                className="block text-gold flex items-center gap-2"
-              >
-                <Sparkles className="w-6 h-6" /> AI Fabric Concierge
-              </Link>
-              <Link
-                href="/swatches"
-                onClick={() => setMobileMenuOpen(false)}
-                className="block hover:text-gold"
-              >
-                Digital Swatch Library
+                4. Services
               </Link>
               <Link
                 href="/brands"
                 onClick={() => setMobileMenuOpen(false)}
                 className="block hover:text-gold"
               >
-                Mill Partners (Zegna, Loro Piana)
+                5. Brands
               </Link>
               <Link
-                href="/lookbook"
+                href="/visit"
                 onClick={() => setMobileMenuOpen(false)}
                 className="block hover:text-gold"
               >
-                Curated Lookbooks
+                6. Visit Us / Contact
               </Link>
               <Link
-                href="/showroom"
+                href="/reviews"
                 onClick={() => setMobileMenuOpen(false)}
                 className="block hover:text-gold"
               >
-                Hampankatta Experience
+                7. Reviews / Customer Stories
               </Link>
-              <Link
-                href="/testimonials"
-                onClick={() => setMobileMenuOpen(false)}
-                className="block hover:text-gold font-sans text-lg tracking-normal"
-              >
-                Client Testimonials & Reviews
-              </Link>
-              <Link
-                href="/blog"
-                onClick={() => setMobileMenuOpen(false)}
-                className="block hover:text-gold font-sans text-lg tracking-normal"
-              >
-                Knowledge Center & Blog
-              </Link>
-              <Link
-                href="/faq"
-                onClick={() => setMobileMenuOpen(false)}
-                className="block hover:text-gold font-sans text-lg tracking-normal"
-              >
-                FAQ & Showroom Policies
-              </Link>
-              <Link
-                href="/contact"
-                onClick={() => setMobileMenuOpen(false)}
-                className="block hover:text-gold font-sans text-lg tracking-normal"
-              >
-                Contact & Store Location
-              </Link>
+
+              <div className="pt-4 mt-4 border-t border-white/10 space-y-3 font-sans text-sm tracking-normal">
+                <Link
+                  href="/concierge"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="block text-gold flex items-center gap-2"
+                >
+                  <Sparkles className="w-4 h-4" /> AI Fabric Concierge
+                </Link>
+                <Link
+                  href="/occasions"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="block hover:text-gold text-gray-300"
+                >
+                  Occasion Finder
+                </Link>
+                <Link
+                  href="/fabric-guide"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="block hover:text-gold text-gray-300"
+                >
+                  Luxury Fabric Guide
+                </Link>
+                <Link
+                  href="/swatches"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="block hover:text-gold text-gray-300"
+                >
+                  Digital Swatches
+                </Link>
+                <Link
+                  href="/faq"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="block hover:text-gold text-gray-300"
+                >
+                  Showroom FAQ
+                </Link>
+              </div>
             </div>
 
             <div className="pt-6 border-t border-gold/20 flex flex-col gap-3">

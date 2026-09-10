@@ -37,6 +37,16 @@ export default function VisitPage() {
             Reserve your dedicated consultation hour at Sharja Complex, Milagres Cross Road, Hampankatta. Our masters will prepare swatches under both daylight and chandelier lighting specifically for your arrival.
           </p>
         </div>
+        {/* Background Overlay */}
+        <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 bg-black/60 z-10" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent z-10" />
+          <img
+            src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=2000&auto=format&fit=crop"
+            alt="Monteiro Textiles Hampankatta Showroom"
+            className="w-full h-full object-cover transform scale-105 animate-pulse duration-10000"
+          />
+        </div>
       </section>
 
       {/* Main Reservation Suite */}

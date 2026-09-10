@@ -111,31 +111,31 @@ export function Footer() {
           {/* Col 3: Experiences & Guides */}
           <div>
             <h5 className="font-serif text-base font-bold text-gold uppercase tracking-wider mb-4 border-b border-gold/20 pb-2">
-              Showroom & Guides
+              Atelier & Services
             </h5>
             <ul className="space-y-2 text-xs font-sans text-gray-300">
-              <li><Link href="/concierge" className="hover:text-gold transition-colors flex items-center gap-1.5 text-gold font-semibold">★ AI Fabric Concierge</Link></li>
-              <li><Link href="/swatches" className="hover:text-gold transition-colors">Digital Swatch Library</Link></li>
-              <li><Link href="/occasions" className="hover:text-gold transition-colors">Occasion Finder</Link></li>
-              <li><Link href="/fabric-guide" className="hover:text-gold transition-colors">Luxury Weave Guide</Link></li>
-              <li><Link href="/lookbook" className="hover:text-gold transition-colors">Style Lookbooks</Link></li>
-              <li><Link href="/brands" className="hover:text-gold transition-colors">Partner Mills (Zegna, Scabal)</Link></li>
-              <li><Link href="/showroom" className="hover:text-gold transition-colors">Virtual Showroom Gallery</Link></li>
-              <li><Link href="/visit" className="hover:text-gold transition-colors">Book Showroom Visit</Link></li>
+              <li><Link href="/services" className="hover:text-gold transition-colors font-semibold text-gold">★ Atelier Services (All 5 Pillars)</Link></li>
+              <li><Link href="/services#fabric-consultation" className="hover:text-gold transition-colors">Expert Fabric Consultation</Link></li>
+              <li><Link href="/services#wedding-trousseau" className="hover:text-gold transition-colors">Wedding & Trousseau Curation</Link></li>
+              <li><Link href="/services#master-tailor-collaboration" className="hover:text-gold transition-colors">Master Tailor Network</Link></li>
+              <li><Link href="/services#bulk-institutional-orders" className="hover:text-gold transition-colors">Bulk & Institutional Sourcing</Link></li>
+              <li><Link href="/concierge" className="hover:text-gold transition-colors flex items-center gap-1.5">AI Fabric Concierge</Link></li>
+              <li><Link href="/swatches" className="hover:text-gold transition-colors">Digital Swatches</Link></li>
             </ul>
           </div>
 
           {/* Col 4: Knowledge & Contact */}
           <div>
             <h5 className="font-serif text-base font-bold text-gold uppercase tracking-wider mb-4 border-b border-gold/20 pb-2">
-              Client Experience
+              Heritage & Stories
             </h5>
             <ul className="space-y-2 text-xs font-sans text-gray-300">
-              <li><Link href="/about" className="hover:text-gold transition-colors">About Our Mangalore Roots</Link></li>
-              <li><Link href="/testimonials" className="hover:text-gold transition-colors">Client Testimonials (4.9★)</Link></li>
-              <li><Link href="/blog" className="hover:text-gold transition-colors">Editorial Knowledge Center</Link></li>
+              <li><Link href="/about" className="hover:text-gold transition-colors">About Monteiro Textiles</Link></li>
+              <li><Link href="/brands" className="hover:text-gold transition-colors">Authorized Brand Partners</Link></li>
+              <li><Link href="/reviews" className="hover:text-gold transition-colors">Customer Stories & Reviews (4.9★)</Link></li>
+              <li><Link href="/visit" className="hover:text-gold transition-colors">Visit Us (Falnir Road, Hampankatta)</Link></li>
+              <li><Link href="/contact" className="hover:text-gold transition-colors">Contact & Directions</Link></li>
               <li><Link href="/faq" className="hover:text-gold transition-colors">Frequently Asked Questions</Link></li>
-              <li><Link href="/contact" className="hover:text-gold transition-colors">Map & Contact Details</Link></li>
               <li>
                 <a
                   href={`https://wa.me/${SHOWROOM_INFO.whatsapp}?text=Hello%20Monteiro%20Textiles,%20I%20would%20like%20to%20inquire%20about%20your%20fabrics.`}

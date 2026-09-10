@@ -753,3 +753,111 @@ export const FAQ_ITEMS: FAQItem[] = [
     answer: "Our curated selection spans three distinct luxury tiers: Heritage Luxury ($$) starting from premium Egyptian cottons and fine Indian wool blends; Italian Master ($$$) featuring Thomas Mason shirting and Super 130s–150s European wools; and Bespoke Royal ($$$$) featuring Zegna Super 180s, Loro Piana cashmere blends, and Scabal 24K gold zari jacquards.",
   },
 ];
+
+export interface ServiceItem {
+  id: string;
+  slug: string;
+  title: string;
+  tagline: string;
+  shortDescription: string;
+  detailedDescription: string;
+  image: string;
+  features: string[];
+  duration: string;
+  location: string;
+  idealFor: string[];
+}
+
+export const SERVICES_LIST: ServiceItem[] = [
+  {
+    id: "fabric-consultation",
+    slug: "fabric-consultation",
+    title: "Expert Fabric Consultation",
+    tagline: "Precision Fiber, GSM & Texture Matching",
+    shortDescription: "One-on-one consultation with master fabric curators to discover the exact weave, drape, and breathability suited to your silhouette, lifestyle, and occasion.",
+    detailedDescription: "Our fabric consultants examine your sartorial goals, posture, climate preferences, and intended event to match you with the ideal bolt. Whether choosing between Super 130s vs Super 150s wool or selecting the exact GSM for a destination wedding linen suit, we provide nuanced technical and aesthetic advice.",
+    image: "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?q=80&w=1000&auto=format&fit=crop",
+    features: [
+      "Fiber composition & yarn count technical guidance",
+      "Skin undertone & shade harmony matching under dual-spectrum lighting",
+      "Micro-climate & travel wrinkle assessment",
+      "Physical tactile swatch evaluation in our private Hampankatta lounge"
+    ],
+    duration: "45 - 60 Minutes",
+    location: "In-Store VIP Salon or Virtual Video Call",
+    idealFor: ["Bespoke Suits", "Tuxedos", "Couture Silks", "Executive Wardrobes"]
+  },
+  {
+    id: "personalized-styling",
+    slug: "personalized-styling",
+    title: "Personalized Styling Recommendations",
+    tagline: "Curated Seasonal Capsules & Boardroom Ensembles",
+    shortDescription: "Bespoke recommendations tailored to your professional role, executive travel demands, and personal taste.",
+    detailedDescription: "Build an immaculate high-performance wardrobe. We evaluate your current pieces and recommend seasonal additions: 4-season hopsack blazers, Egyptian Giza 88 luxury shirting capsules, and fluid silks for social engagements.",
+    image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=1000&auto=format&fit=crop",
+    features: [
+      "Year-round capsule fabric planning",
+      "High-performance wrinkle-resistant travel curations",
+      "Personal fabric dossier maintained for future fast re-orders",
+      "Curated sample swatches dispatched to your home or office"
+    ],
+    duration: "45 Minutes",
+    location: "In-Store or Private Concierge",
+    idealFor: ["C-Suite Executives", "Frequent Travelers", "High Court Advocates", "Capsule Wardrobes"]
+  },
+  {
+    id: "wedding-trousseau",
+    slug: "wedding-trousseau",
+    title: "Wedding & Trousseau Curation",
+    tagline: "Harmonious Styling for Brides, Grooms & Entire Families",
+    shortDescription: "End-to-end textile curation for multi-day wedding festivities, ensuring cohesive themes across Mehendi, Sangeet, Wedding, and Reception.",
+    detailedDescription: "Weddings are our heritage specialty. We orchestrate fabric selections for the couple, immediate family, and bridal entourage. From authentic Banarasi Katan silks for the bride and bespoke Italian velvet achkans for the groom, to breathable pastel linen ensembles for sunset destination celebrations.",
+    image: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?q=80&w=1000&auto=format&fit=crop",
+    features: [
+      "Color-palette synchronization across all ceremonial events",
+      "Bulk coordination for groomsmen and bridesmaids",
+      "Direct sourcing from Varanasi, Kanchipuram, Biella & Como mills",
+      "Express reservation of rare limited-edition bolts"
+    ],
+    duration: "90 - 120 Minutes",
+    location: "VIP Bridal & Groom Atelier Lounge (Monteiro Flagship)",
+    idealFor: ["Bridal Trousseau", "Groom Sherwanis & Bandhgalas", "Family Wedding Wardrobes"]
+  },
+  {
+    id: "master-tailor-collaboration",
+    slug: "master-tailor-collaboration",
+    title: "Collaboration with Master Tailors",
+    tagline: "Bridging Premium Cloth with Sartorial Precision",
+    shortDescription: "Comprehensive tailoring blueprints, precise meterage calculations, and direct referrals to verified master bespoke ateliers.",
+    detailedDescription: "The finest fabric deserves exquisite construction. We provide cutting blueprints, pattern alignment instructions for checks/herringbones, and direct introductions to the region’s premier master bespoke tailors and achkan couturiers across Mangalore and Bangalore.",
+    image: "https://images.unsplash.com/photo-1598554747436-c9293d6a588f?q=80&w=1000&auto=format&fit=crop",
+    features: [
+      "Exact yardage / meterage estimation for bespoke silhouettes",
+      "Pattern match & grainline cutting guidance tags included",
+      "Direct connection with vetted master bespoke tailors",
+      "Pre-shrinkage and fabric conditioning service before cutting"
+    ],
+    duration: "Included with Fabric Purchase",
+    location: "Monteiro Tailoring Liaison Desk",
+    idealFor: ["Bespoke Tailoring", "Pattern Matching", "Zero Waste Cuts"]
+  },
+  {
+    id: "bulk-institutional-orders",
+    slug: "bulk-institutional-orders",
+    title: "Bulk & Institutional Orders",
+    tagline: "Direct Mill Sourcing for Designers, Hospitality & Uniforms",
+    shortDescription: "Direct wholesale and institutional support with customized dye lots, consistent GSM specifications, and priority production timelines.",
+    detailedDescription: "We partner with corporate firms, boutique hotels, high-end executive clubs, and fashion design studios to deliver bulk meterage with strict dye-lot consistency and rigorous quality certificates directly from partner mills.",
+    image: "https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?q=80&w=1000&auto=format&fit=crop",
+    features: [
+      "Custom color-lab dipping and Pantone matching",
+      "Lab test certificates for tensile strength and colorfastness",
+      "Tiered institutional volume pricing",
+      "Pan-India and international logistics management"
+    ],
+    duration: "Custom Project Timelines",
+    location: "Corporate Accounts Division",
+    idealFor: ["Corporate Suiting", "Luxury Hospitality", "Fashion Studios", "Executive Uniforms"]
+  }
+];
+

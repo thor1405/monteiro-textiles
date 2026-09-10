@@ -20,7 +20,7 @@ export default function AboutPage() {
           </span>
           <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl font-bold uppercase tracking-tight text-white leading-tight">
             Our Heritage of <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-light via-gold to-gold-dark italic font-normal">
+            <span className="text-gold italic font-normal">
               Uncompromising Quality
             </span>
           </h1>
@@ -28,11 +28,14 @@ export default function AboutPage() {
             For nearly five decades, Monteiro Textiles has served as South India’s premier custodian of world-class textiles. We believe that true luxury begins where the sheep are grazed and where the flax is spun.
           </p>
         </div>
-        <div className="absolute inset-0 z-0 opacity-20">
+        {/* Background Overlay */}
+        <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 bg-black/60 z-10" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent z-10" />
           <img
-            src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?q=80&w=2000&auto=format&fit=crop"
-            alt="Monteiro Textiles History"
-            className="w-full h-full object-cover"
+            src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=2000&auto=format&fit=crop"
+            alt="Monteiro Textiles Luxury Showroom Hampankatta Mangalore"
+            className="w-full h-full object-cover transform scale-105 animate-pulse duration-10000"
           />
         </div>
       </section>

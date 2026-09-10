@@ -24,6 +24,16 @@ export default function BrandsPage() {
             Monteiro Textiles partners strictly with weaving dynasties whose history spans over a century across Biella, Huddersfield, and St. Gallen. Every bolt comes accompanied by its woven selvedge certificate.
           </p>
         </div>
+        {/* Background Overlay */}
+        <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 bg-black/60 z-10" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent z-10" />
+          <img
+            src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=2000&auto=format&fit=crop"
+            alt="Monteiro Textiles Mill Partners"
+            className="w-full h-full object-cover transform scale-105 animate-pulse duration-10000"
+          />
+        </div>
       </section>
 
       {/* Grid of Partners */}
